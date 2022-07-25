@@ -3,8 +3,9 @@
 * Run the springboot app
 
 
-> mvn spring-boot:run -Dspring-boot.run.arguments=--dataDir=C:\Users\Brendon\JavaProjects\ssfworkshop3
-
+```
+mvn spring-boot:run -Dspring-boot.run.arguments=--dataDir=C:\Users\Brendon\JavaProjects\ssfworkshop3
+```
 
 * Incorporate test dependencies
 
@@ -19,4 +20,6 @@
 
 * In order to execute test cases
 
-> mvn test
+```
+mvn test
+```
