@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -30,6 +31,12 @@ public class AddressController {
     @PostMapping
     public String saveContact(@ModelAttribute Contact contact, Model model) {
         ctcz.saveContact(contact, model, appArgs);
+        return "showcontact";
+    }
+
+    @GetMapping("{contactId}")
+    public String getContactById(Model model, @PathVariable String contactId ) {
+        ctcz.getContactById(model, contactId, appArgs);
         return "showcontact";
     }
 }
