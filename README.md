@@ -4,7 +4,7 @@
 
 
 ```
-mvn spring-boot:run -Dspring-boot.run.arguments=--dataDir=C:\Users\Brendon\JavaProjects\ssfworkshop3
+mvn spring-boot:run -Dspring-boot.run.arguments=--dataDir=\data
 ```
 
 * Incorporate test dependencies
